@@ -1,0 +1,65 @@
+html{
+    height:100%;
+}
+body{
+    display:flex;
+    color: rgba(226, 225, 225, 0.836);
+    width:100%;
+    flex-wrap:wrap;
+    background-color:rgba(0, 0, 0, 0.904);
+}
+.fullpage{
+    width: 100vh;
+    height: 100%;
+    margin:0px;
+}
+
+.table{
+    display:flex;
+    background-color: rgba(184, 110, 0, 0.274);
+    border-bottom: 3px solid rgba(184, 110, 0, 0.425);
+    border-top: 2px solid rgba(184, 110, 0, 0.281);
+    border-left: 2px solid rgba(184, 110, 0, 0.281);
+    border-right:  2px solid rgba(184, 110, 0, 0.281);
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+    width:50%;
+    height:10vh;
+    top:0;
+}
+.api{
+    background-color: rgba(184, 110, 0, 0.6);
+    color: "#FFC038";
+    border: 1px solid rgba(184, 110, 0, 0.425);
+    min-height: 5vh;
+    height:7vh;
+    overflow-x: hidden;
+}
+#input{
+    display:flex;
+    background-color: rgba(184, 110, 0, 0.425);
+    border: 1px solid rgba(184, 110, 0, 0.425);
+    color: rgba(84,248, 224, .625);
+    height:3vh;
+    width: 90%;
+    margin-left:1%;
+    align-self: center;
+    bottom:0;
+}
+#header{
+    margin-left: 2%;
+    width:50vh;
+}
+#output{
+    width:95%;
+    height: 65vh;
+    align-self: center;
+    margin-left:1.5%;
+    background-color: rgba(184, 110, 0, 0.185);
+    overflow-y: scroll;
+}
+#userInteract{
+    display:inline-flex;
+    margin-left:1%;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API HUB</title>
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/css/api.css">
+    <div class="fullpage" id='header'>
+        <h1>API HUB</h1>
+        <h5> Click an API to reference </h5>
+    </div>
+        <div class="fullpage table" id="table">
+            <button class="api">Spoonacular (Recipes)</button>
+            <button class="api">Weather</button>
+            <button class="api"> Stock information (face scan required)</button>
+            <button class="api"> Talk to ATLAS</button>
+        </div>
+        <div id="output">
+            <p></p>
+        </div>
+        <div id="userInteract" class="fullpage">
+            <input id="input" class="input" placeholder="Ask away...">
+            <button>Send</button>
+        </div>
+    <script src="/js/hub.js"></script>
+</body>
+</html>
+

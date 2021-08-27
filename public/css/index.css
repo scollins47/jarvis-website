@@ -1,0 +1,251 @@
+html{
+        width:100%;
+        height:100%;
+    }
+body{
+    height:100%;
+    width:100%;
+    display:flex;
+    background-color: rgba(1, 0, 12, 0.753);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+}
+#header{
+    position:absolute;
+    top:0;
+    display:flex;
+    align-self: flex-end;
+    height:50px;
+    width:95%;
+    padding-left:5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid rgba(48, 6, 145, 0.101);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header{
+    background-color: rgba(40, 14, 57, 0.644);
+}
+.headerButton{
+    background-color: rgba(40, 14, 57, 0.644);
+}
+#ask{
+    height:75%;
+    border-radius: 10px;
+    width:fit-content;
+    color: rgba(142,31, 199, .5);
+    border: 1px solid rgba(11, 9, 141, 0.752);
+    font-weight: bold;
+}
+
+.sphere {
+  width: 45vmin;
+  height: 45vmin;
+  animation: spinSphere 20s infinite linear;
+  transform-style: preserve-3d;
+}
+
+[class^=ring] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 45vmin;
+  height: 45vmin;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+[class$="1"] {
+  transform: rotateY(2deg) rotateX(2deg) rotateZ(3deg);
+  box-shadow: 0 0 3px rgba(38, 0, 253, 0.1), inset 0 0 3px rgba(181, 0, 253, 0.1);
+}
+
+[class$="2"] {
+  transform: rotateY(4deg) rotateX(4deg) rotateZ(6deg);
+  box-shadow: 0 0 5px rgba(45, 76, 251, 0.1), inset 0 0 5px rgba(90, 45, 251, 0.1);
+}
+
+[class$="3"] {
+  transform: rotateY(6deg) rotateX(6deg) rotateZ(9deg);
+  box-shadow: 0 0 7px rgba(59, 45, 249, 0.1), inset 0 0 7px rgba(59, 45, 249, 0.1);
+}
+
+[class$="4"] {
+  transform: rotateY(8deg) rotateX(8deg) rotateZ(12deg);
+  box-shadow: 0 0 9px rgba(45, 58, 247, 0.1), inset 0 0 9px rgba(82, 45, 247, 0.1);
+}
+
+[class$="5"] {
+  transform: rotateY(10deg) rotateX(10deg) rotateZ(15deg);
+  box-shadow: 0 0 11px rgba(227, 90, 245, 0.1), inset 0 0 11px rgba(227, 90, 245, 0.1);
+}
+
+[class$="6"] {
+  transform: rotateY(12deg) rotateX(12deg) rotateZ(18deg);
+  box-shadow: 0 0 13px rgba(207, 90, 243, 0.1), inset 0 0 13px rgba(217, 90, 243, 0.1);
+}
+
+[class$="7"] {
+  transform: rotateY(14deg) rotateX(14deg) rotateZ(21deg);
+  box-shadow: 0 0 15px rgba(211, 90, 241, 0.1), inset 0 0 15px rgba(123, 90, 241, 0.1);
+}
+
+[class$="8"] {
+  transform: rotateY(16deg) rotateX(16deg) rotateZ(24deg);
+  box-shadow: 0 0 17px rgba(151, 135, 239, 0.1), inset 0 0 17px rgba(201, 135, 239, 0.1);
+}
+
+[class$="9"] {
+  transform: rotateY(18deg) rotateX(18deg) rotateZ(27deg);
+  box-shadow: 0 0 19px rgba(135, 167, 237, 0.1), inset 0 0 19px rgba(135, 196, 237, 0.1);
+}
+
+[class$="10"] {
+  transform: rotateY(20deg) rotateX(20deg) rotateZ(30deg);
+  box-shadow: 0 0 21px rgba(135, 142, 235, 0.1), inset 0 0 21px rgba(135, 167, 235, 0.1);
+}
+
+[class$="11"] {
+  transform: rotateY(22deg) rotateX(22deg) rotateZ(33deg);
+  box-shadow: 0 0 23px rgba(233, 164, 180, 0.1), inset 0 0 23px rgba(233, 164, 180, 0.1);
+}
+
+[class$="12"] {
+  transform: rotateY(24deg) rotateX(24deg) rotateZ(36deg);
+  box-shadow: 0 0 25px rgba(231, 164, 180, 0.1), inset 0 0 25px rgba(231, 164, 180, 0.1);
+}
+
+[class$="13"] {
+  transform: rotateY(26deg) rotateX(26deg) rotateZ(39deg);
+  box-shadow: 0 0 27px rgba(229, 163, 180, 0.1), inset 0 0 27px rgba(229, 163, 180, 0.1);
+}
+
+[class$="14"] {
+  transform: rotateY(28deg) rotateX(28deg) rotateZ(42deg);
+  box-shadow: 0 0 29px rgba(227, 163, 225, 0.1), inset 0 0 29px rgba(227, 163, 225, 0.1);
+}
+
+[class$="15"] {
+  transform: rotateY(30deg) rotateX(30deg) rotateZ(45deg);
+  box-shadow: 0 0 31px rgba(225, 162, 225, 0.1), inset 0 0 31px rgba(225, 162, 225, 0.1);
+}
+
+[class$="16"] {
+  transform: rotateY(32deg) rotateX(32deg) rotateZ(48deg);
+  box-shadow: 0 0 33px rgba(223, 162, 225, 0.1), inset 0 0 33px rgba(223, 162, 225, 0.1);
+}
+
+[class$="17"] {
+  transform: rotateY(34deg) rotateX(34deg) rotateZ(51deg);
+  box-shadow: 0 0 35px rgba(221, 161, 255, 0.1), inset 0 0 35px rgba(221, 161, 255, 0.1);
+}
+
+[class$="18"] {
+  transform: rotateY(36deg) rotateX(36deg) rotateZ(54deg);
+  box-shadow: 0 0 37px rgba(219, 161, 255, 0.1), inset 0 0 37px rgba(219, 161, 255, 0.1);
+}
+
+[class$="19"] {
+  transform: rotateY(38deg) rotateX(38deg) rotateZ(57deg);
+  box-shadow: 0 0 39px rgba(177, 160, 255, 0.1), inset 0 0 39px rgba(217, 160, 255, 0.1);
+}
+
+[class$="20"] {
+  transform: rotateY(40deg) rotateX(40deg) rotateZ(60deg);
+  box-shadow: 0 0 41px rgba(160, 209, 255, 0.1), inset 0 0 41px rgba(215, 160, 255, 0.1);
+}
+
+[class$="21"] {
+  transform: rotateY(42deg) rotateX(42deg) rotateZ(63deg);
+  box-shadow: 0 0 43px rgba(213, 159, 255, 0.1), inset 0 0 43px rgba(159, 197, 255, 0.1);
+}
+
+[class$="22"] {
+  transform: rotateY(44deg) rotateX(44deg) rotateZ(66deg);
+  box-shadow: 0 0 45px rgba(159, 169, 255, 0.1), inset 0 0 45px rgba(159, 189, 255, 0.1);
+}
+
+[class$="23"] {
+  transform: rotateY(46deg) rotateX(46deg) rotateZ(69deg);
+  box-shadow: 0 0 47px rgba(158, 160, 255, 0.1), inset 0 0 47px rgba(160, 158, 255, 0.1);
+}
+
+[class$="24"] {
+  transform: rotateY(48deg) rotateX(48deg) rotateZ(72deg);
+  box-shadow: 0 0 49px rgba(168, 158, 255, 0.1), inset 0 0 49px rgba(165, 158, 255, 0.1);
+}
+
+[class$="25"] {
+  transform: rotateY(50deg) rotateX(50deg) rotateZ(75deg);
+  box-shadow: 0 0 51px rgba(157, 164, 255, 0.1), inset 0 0 51px rgba(157, 200, 255, 0.1);
+}
+
+[class$="26"] {
+  transform: rotateY(52deg) rotateX(52deg) rotateZ(78deg);
+  box-shadow: 0 0 53px rgba(157, 183, 255, 0.1), inset 0 0 53px rgba(203, 157, 255, 0.1);
+}
+
+[class$="27"] {
+  transform: rotateY(54deg) rotateX(54deg) rotateZ(81deg);
+  box-shadow: 0 0 55px rgba(201, 156, 255, 0.1), inset 0 0 55px rgba(201, 156, 255, 0.1);
+}
+
+[class$="28"] {
+  transform: rotateY(56deg) rotateX(56deg) rotateZ(84deg);
+  box-shadow: 0 0 57px rgba(199, 156, 255, 0.1), inset 0 0 57px rgba(199, 156, 255, 0.1);
+}
+
+[class$="29"] {
+  transform: rotateY(58deg) rotateX(58deg) rotateZ(87deg);
+  box-shadow: 0 0 59px rgba(255, 175, 155, 0.1), inset 0 0 59px rgba(255, 158, 155, 0.1);
+}
+
+[class$="30"] {
+  transform: rotateY(60deg) rotateX(60deg) rotateZ(90deg);
+  box-shadow: 0 0 61px rgba(195, 155, 255, 0.1), inset 0 0 61px rgba(195, 155, 255, 0.1);
+}
+
+[class$="31"] {
+  transform: rotateY(62deg) rotateX(62deg) rotateZ(93deg);
+  box-shadow: 0 0 63px rgba(193, 154, 255, 0.1), inset 0 0 63px rgba(193, 154, 255, 0.1);
+}
+
+[class$="32"] {
+  transform: rotateY(64deg) rotateX(64deg) rotateZ(96deg);
+  box-shadow: 0 0 65px rgba(191, 154, 255, 0.1), inset 0 0 65px rgba(191, 154, 255, 0.1);
+}
+
+[class$="33"] {
+  transform: rotateY(66deg) rotateX(66deg) rotateZ(99deg);
+  box-shadow: 0 0 67px rgba(189, 153, 255, 0.1), inset 0 0 67px rgba(189, 153, 255, 0.1);
+}
+
+[class$="34"] {
+  transform: rotateY(68deg) rotateX(68deg) rotateZ(102deg);
+  box-shadow: 0 0 69px rgba(153, 155, 255, 0.1), inset 0 0 69px rgba(184, 153, 255, 0.1);
+}
+
+[class$="35"] {
+  transform: rotateY(70deg) rotateX(70deg) rotateZ(105deg);
+  box-shadow: 0 0 71px rgba(185, 152, 255, 0.1), inset 0 0 71px rgba(185, 152, 255, 0.1);
+}
+
+[class$="36"] {
+  transform: rotateY(72deg) rotateX(72deg) rotateZ(108deg);
+  box-shadow: 0 0 73px rgba(67, 8, 204, 0.1), inset 0 0 73px rgba(37, 16, 226, 0.1);
+}
+
+@keyframes spinSphere {
+  from {
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateZ(360deg) rotateX(-360deg) rotateZ(360deg);
+  }
+}

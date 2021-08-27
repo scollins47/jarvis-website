@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/socket.io/socket.io.js"></script>
+   
+</head>
+<body id="body">
+    <div id="header" class="header">
+        <button class="headerButton pulse" id="ask" onclick='sendToAPIPage()'> ask a command </button>
+    </div>
+     <script type="module" src="/js/index.js"></script>
+</body>
+<script>
+    const sendToAPIPage = function(){
+        window.location.href = "/hub";
+    }
+</script>
+<style> 
+    
+</style>
