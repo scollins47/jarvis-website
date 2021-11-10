@@ -265,8 +265,4 @@ socket.on("talking", () => {
         MESSAGEINCOMING = true;
         SPEEDLIMIT = 1000;
     }
-    
-});
-socket.on('listening', (data) => {
-    console.log(data.seconds);
 });

@@ -7,26 +7,30 @@
     <title>API HUB</title>
 </head>
 <body>
-    <script src="/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="/css/api.css">
     <div class="fullpage" id='header'>
         <h1>API HUB</h1>
         <h5> Click an API to reference </h5>
     </div>
         <div class="fullpage table" id="table">
-            <button class="api">Spoonacular (Recipes)</button>
-            <button class="api">Weather</button>
-            <button class="api"> Stock information (face scan required)</button>
-            <button class="api"> Talk to ATLAS</button>
+            <button id="spoon"class="api">Spoonacular (Recipes)</button>
+            <button id="weather" class="api">Weather</button>
+            <button id="stocks" class="api"> Stock information (face scan required)</button>
+            <button id="talk" class="api"> Talk to ATLAS</button>
         </div>
         <div id="output">
             <p></p>
         </div>
         <div id="userInteract" class="fullpage">
             <input id="input" class="input" placeholder="Ask away...">
-            <button>Send</button>
+            <button id='sendBtn'>Send</button>
         </div>
-    <script src="/js/hub.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script id ='hubScript' src="/js/hub.js"></script>
+    <footer id='footer'></footer>
 </body>
 </html>
+<script>
+    document.getElementById('footer').onload = addListeners();
+</script>
 
