@@ -4,6 +4,7 @@ const WEATHER = 1;
 const STOCKS = 2;
 const TALK = 3;
 const SPOTIFY = 4;
+const LIGHTS = 5;
 const socket = io();
 var apiSelected = NOAPI;
 
@@ -31,6 +32,12 @@ function sendMessage(message) {
     document.getElementById("input").value = "";
     socket.emit("message", { message, apiSelected });
 }
+function setUpLights() {
+    let pw = prompt("Enter Password for Lights: ", "none");
+    if (pw != null && pw != "" && pw != "none") {
+        socket.emit("lights", { pw });
+    }
+}
 function addListeners(){
     document.getElementById("table").addEventListener("click", event => {
         if (event.target.className == "api") {
@@ -56,12 +63,22 @@ function addListeners(){
                 case "spotify":
                     apiSelected = SPOTIFY;
                     break;
+                case "lights":
+                    apiSelected = LIGHTS;
+                    setUpLights();
+                    break;
                 default:
                     apiSelected = NOAPI;
                     break;
             }
         }
+        if (apiSelected != LIGHTS) {
+            document.getElementById("output").style.visibility = "visible";
+            document.getElementById("userInteract").style.visibility = "visible";
+            document.getElementById("lightsDiv").style.visibility = "hidden";
+        }
     });
+    
     document.getElementById('input').addEventListener("keydown", function (event) {
         if (event.key == "Enter") {
             sendMessage(event.target.value);
@@ -82,4 +99,9 @@ socket.on('response', data => {
         output.firstElementChild.remove();
     }
 });
-
+socket.on('goToLights', () => {
+    window.location.href = "/hub/lights";
+});
+socket.on('lightsFailed', () => {
+    alert("Incorrect Password");
+});

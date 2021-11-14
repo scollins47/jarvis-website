@@ -26,12 +26,13 @@ app.post('/response', (req, res) => {
 app.get('/getMessage', (req, res) => {
     if (msgQueue.length > 0) {
         let info = msgQueue.shift();
-        let message = info.message;
-        let apiSelected = info.apiSelected;
-        res.json({message, apiSelected});
+        res.json({...info});
     } else {
         res.json({message: "", apiSelected: -1});
     }
+});
+app.get("/hub/lights", (req, res) => {
+    res.sendFile("lights.html", { root: './' });
 });
 io.sockets.on('connection', onConnect);
 io.sockets.use((socket, next) => {
@@ -42,5 +43,12 @@ function onConnect(socket) {
     console.log(`${socket.id} connected`);
     socket.on("message", ({ message, apiSelected }) => {
         msgQueue.push({ message, apiSelected });
+    });
+    socket.on("lights", ({ pw }) => {
+        if (pw === "letThereBeLight") {
+            io.sockets.emit("goToLights");
+        } else {
+            io.sockets.emit("lightsFailed");
+        }
     });
 }
